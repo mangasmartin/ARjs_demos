@@ -2,7 +2,7 @@
 
 Some simple working demos to understand how Jerome Ettiene's [AR.js](https://github.com/jeromeetienne/AR.js) works.
 
-Due to the different technologies needed and its own evolution, all demos work with a determinate scripts you can find in the js folder.
+Due to the different technologies needed and its own evolution, all demos work with a determinated version scripts you can find in the js folder.
 
 Targets:
 - For [basic.html](https://mangasmartin.github.io/ARjs_demos/basic.html) demo you need to use the [hiro marker](https://jeromeetienne.github.io/AR.js/data/images/HIRO.jpg).
