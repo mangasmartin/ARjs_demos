@@ -10,17 +10,6 @@
   <title>AR.js | Detection demo</title>
   <script src="js/aframe.min.0.6.1.js"></script>
   <script src="js/aframe-ar.js"></script>
-  <script>
-  window.addEventListener("load", markerDetection);
-  
-  function markerDetection(){
-    var marker = document.getElementById("marker");
-    if (marker.object3d.visible){
-      console.log("Marker detected!");
-    }
-    requestAnimationFrame(markerDetection);
-  }
-  </script>
   <style>
     html, body {
       margin: 0;
@@ -38,5 +27,18 @@
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
+  <script>
+    function markerDetection(){
+      var m = document.getElementById("hiromarker");
+      if (m.object3D.visible){
+        //Marker founded
+        console.log("Marker detected!");
+      } else {
+        //Marker lost
+      }
+      requestAnimationFrame(markerDetection);
+    }
+    markerDetection();
+  </script>
 </body>
 </html>
