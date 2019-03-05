@@ -39,7 +39,7 @@
       var x2 = m2.object3D.position.y;
       var y1 = m1.object3D.position.x;
       var y2 = m2.object3D.position.y;
-      var d = Math.sqrt((x2 - x1)^2 + (y2 - y1)^2);
+      var d = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
       console.log(Math.abs(d));
     }
     requestAnimationFrame(markerDetection);
